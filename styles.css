@@ -1,0 +1,175 @@
+/* General Styling */
+body {
+    font-family: 'Fira Code', monospace; /* Monospaced coding font */
+    background-color: #282c34; /* Dark background, similar to code editors */
+    color: #abb2bf; /* Light gray text for normal content */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #1e222a; /* Darker card-like container */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid #61dafb; /* Neon blue border */
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.container:hover {
+    border-color: #98c379; /* Neon green border on hover */
+    box-shadow: 0 0 20px #98c379; /* Neon green glow on hover */
+}
+
+h1 {
+    text-align: center;
+    color: #61dafb; /* React-like blue for title */
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+textarea,
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #444c56; /* Dark borders */
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #2b2f38; /* Darker input field */
+    color: #e06c75; /* Pinkish-red text color (similar to code strings) */
+    caret-color: #c678dd; /* Light purple caret */
+    transition: border-color 0.3s ease-in-out;
+}
+
+textarea:focus,
+input:focus {
+    border-color: #61dafb; /* Highlight blue border on focus */
+    outline: none;
+}
+
+label {
+    color: #98c379; /* Greenish text, like coding comments */
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    background-color: #61dafb; /* Cool blue button */
+    color: #282c34;
+    padding: 15px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #56c1e4;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Output and Parse Tree with Green Font */
+.output,
+.parse-tree-container {
+    margin-top: 20px;
+    background-color: #2c313a; /* Dark output box */
+    padding: 20px;
+    border-radius: 8px;
+    white-space: pre-line;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    color: #98c379; /* Green font for terminal-like output */
+}
+
+.output:hover,
+.parse-tree-container:hover {
+    background-color: #3a3f4b; /* Slightly lighter on hover */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Tree structure styling */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+    line-height: 1.6em;
+}
+
+/* Highlight non-terminals, terminals, and epsilon as code colors */
+.non-terminal {
+    color: #e06c75; /* Pink-red for non-terminals */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.terminal {
+    color: #61afef; /* Light blue for terminals */
+    font-style: italic;
+}
+
+.epsilon {
+    color: #d19a66; /* Orange for epsilon */
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Lines connecting parent and children in the tree */
+ul li ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #444c56; /* Gray lines */
+    position: relative;
+}
+
+ul li ul::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    height: 20px;
+    border-top: 1px solid #444c56;
+    width: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    textarea,
+    input {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    button {
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+
+    .output,
+    .parse-tree-container {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}

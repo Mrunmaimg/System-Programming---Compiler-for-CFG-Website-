@@ -1,0 +1,37 @@
+S -> C V T E
+C -> b | c | f | g | h | l | m | p | r | s | d
+V -> a | e | i | o | u 
+T -> t | n | k | g | ε
+E -> e | ε
+
+words - bat, cat, fat, hat, mat, pat, rat, sat,
+        bet, get, cet, let, met, pet, set,
+        bit, fit, git, hit, lit, mit, pit, sit, 
+        bot, cot, got, hot, lot, mot, pot, rot, sot, dot,
+        but, cut, gut, hut, mut, put, rut, 
+        ban, can, fan, lan, man, pan, ran, san, dan, 
+        dak, bag, lag, rag, 
+        cake, make, bake, fake, hake, lake, rake, sake,
+        fate, gate, hate, late, mate, sate, date, 
+        bane, cane, fane, lane, mane, pane, sane, 
+        cage, mage, page, rage, sage, 
+        ben, pen, hen, den
+
+
+S -> A X
+A -> a
+X -> c X'
+X' -> B X' | ε
+B -> b
+
+words - acb, ac
+
+
+S -> C V C P V T E C
+C -> b | c | f | g | h | l | m | p | r | s | d
+V -> a | e | i | o | u 
+T -> t | n | k | g | ε
+P -> p | ε
+E -> e | ε
+
+words - computer

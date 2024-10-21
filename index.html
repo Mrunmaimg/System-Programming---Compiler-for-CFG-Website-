@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFG Compiler</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Coding font -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>CFG COMPILER</h1>
+
+        <!-- Input Section for Grammar Rules -->
+        <label for="inputGrammar">Enter Grammar Rules:</label>
+        <textarea id="inputGrammar" rows="6" placeholder="Enter grammar"></textarea>
+
+        <!-- Input Section for String to Parse -->
+        <label for="inputString">Enter String to Parse:</label>
+        <input type="text" id="inputString" placeholder="Enter string here..." />
+
+        <!-- Button to trigger the CFG Compilation and Parsing -->
+        <button onclick="CFGCompiler()">Compile and Parse</button>
+
+        <!-- Output Section for Grammar Rules -->
+        <div class="output" id="output"></div>
+
+        <!-- Output Section for Parse Tree -->
+        <div class="parse-tree-container" id="parseTree"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
