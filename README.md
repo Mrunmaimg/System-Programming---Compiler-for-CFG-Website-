@@ -67,8 +67,7 @@ The CFG Compiler processes the grammar rules and performs parsing using a recurs
 
 ## Repository Link
 
-I've updated the repository link in the context. You can use this:
-
+If you want to implement the same project in java
 
 [System Programming - Compiler of CFG (Java)](https://github.com/Mrunmaimg/System-Programming---Compiler-of-CFG-Java-)
 
