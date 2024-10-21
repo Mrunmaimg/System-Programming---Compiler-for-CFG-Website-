@@ -19,6 +19,21 @@ This project implements a Context-Free Grammar (CFG) compiler using HTML, CSS, a
 3. Click the **Compile and Parse** button to generate the parse tree.
 4. The compiled grammar and the generated parse tree will be displayed below the input fields.
 
+
+
+### How to Use
+
+1. Clone the repository using the following command:
+
+    ```bash
+    git clone https://github.com/Mrunmaimg/System-Programming---Compiler-for-CFG-Website-.git
+    ```
+
+2. Open the `index.html` file in your browser.
+3. Enter your grammar rules and the string to parse, then click "Compile and Parse" to see the results.
+
+
+
 ### Example
 
 **Grammar:**
